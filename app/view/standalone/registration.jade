@@ -1,0 +1,52 @@
+doctype 5
+html
+    head
+        title= title
+
+        // stylesheet
+        link(rel='stylesheet', href='/css/bootstrap.min.css')
+        link(rel='stylesheet', href='/css/bootstrap-responsive.min.css')
+        link(rel='stylesheet', href='/css/main.css')
+
+        body
+            div.container
+                div.span6
+                    h1= title
+                    hr
+
+                    form(name="registration", action="/register", method="post")
+                        p.error
+                        p First name:
+                        input(type="text", name="first_name")
+                        p Last name:
+                        input(type="text", name="last_name")
+                        p E-Mail:
+                        input(type="text", name="email")
+                        input(class="btn btn-large btn-primary" type="submit", value="register")
+
+            // javascript
+            if(!(env == "production"))
+                // libraries
+                script(rel="text/javascript" src="/js/libraries/jquery-1.10.2.js");
+                script(rel="text/javascript" src="/js/libraries/jquery.color-2.1.0.js");
+                script(rel="text/javascript" src="/js/libraries/socket.io.js");
+                // application core
+                script(rel="text/javascript", src="/js/core/Core.js")
+                script(rel="text/javascript", src="/js/core/Core.DomManipulation.js")
+                script(rel="text/javascript", src="/js/core/Core.Ajax.js")
+                script(rel="text/javascript", src="/js/core/Core.Templates.js")
+                script(rel="text/javascript", src="/js/core/Core.Mediator.js")
+                script(rel="text/javascript", src="/js/core/Core.Socket.js")
+                script(rel="text/javascript", src="/js/core/Core.Utils.js")
+                // sandbox
+                script(rel="text/javascript", src="/js/sandbox/Sandbox.js")
+                // modules
+                script(rel="text/javascript", src="/js/modules/corkboard.js")
+                script(rel="text/javascript", src="/js/modules/friend-request.js")
+                script(rel="text/javascript", src="/js/modules/notification.js")
+                script(rel="text/javascript", src="/js/modules/chat.js")
+                script(rel="text/javascript", src="/js/modules/registration.js")
+                // main.js - entry point
+                script(rel="text/javascript", src="/js/main.js")
+            if(env == "production")
+                script(rel="text/javascript", src="/js_min/client.min.js")

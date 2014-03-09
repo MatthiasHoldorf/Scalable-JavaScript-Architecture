@@ -1,0 +1,972 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6fc9e6b7-a93c-4114-972f-b0084bb045bb" name="Default" comment="Renamed corkboad-message to corkboard.js.&#10;Renamed assert method to equals in clientside tests.&#10;Minor formatting changes.&#10;Added yuidocjs to dev dependencies.">
+      <change type="DELETED" beforePath="C:\MH\Projects\Scalable-JavaScript-Architecture\node_modules\async\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="C:\MH\Projects\Scalable-JavaScript-Architecture\node_modules\async\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\MH\Projects\Scalable-JavaScript-Architecture\node_modules\async\component.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\MH\Projects\Scalable-JavaScript-Architecture\node_modules\async\lib\async.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\MH\Projects\Scalable-JavaScript-Architecture\node_modules\async\package.json" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
+    <ignored path="SN.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <file path="/app.js" changelist="6fc9e6b7-a93c-4114-972f-b0084bb045bb" time="1389093672740" ignored="false" />
+    <file path="/index.js" changelist="6fc9e6b7-a93c-4114-972f-b0084bb045bb" time="1389095170783" ignored="false" />
+    <file path="/layout.jade" changelist="6fc9e6b7-a93c-4114-972f-b0084bb045bb" time="1382454135970" ignored="false" />
+    <file path="/profile.js" changelist="6fc9e6b7-a93c-4114-972f-b0084bb045bb" time="1383224071814" ignored="false" />
+    <file path="/profile.jade" changelist="6fc9e6b7-a93c-4114-972f-b0084bb045bb" time="1386247273306" ignored="false" />
+    <file path="/ProfileModel.js" changelist="6fc9e6b7-a93c-4114-972f-b0084bb045bb" time="1381843070156" ignored="false" />
+    <file path="/profileController.js" changelist="6fc9e6b7-a93c-4114-972f-b0084bb045bb" time="1386322675190" ignored="false" />
+    <file path="/authorization.js" changelist="6fc9e6b7-a93c-4114-972f-b0084bb045bb" time="1381845952746" ignored="false" />
+    <file path="/Dummy.txt" changelist="6fc9e6b7-a93c-4114-972f-b0084bb045bb" time="1392795114820" ignored="false" />
+    <file path="/README" changelist="6fc9e6b7-a93c-4114-972f-b0084bb045bb" time="1383223373330" ignored="false" />
+    <file path="/profileModel.js" changelist="6fc9e6b7-a93c-4114-972f-b0084bb045bb" time="1382515496734" ignored="false" />
+    <file path="/style.css" changelist="6fc9e6b7-a93c-4114-972f-b0084bb045bb" time="1386160457156" ignored="false" />
+    <file path="/registrationController.js" changelist="6fc9e6b7-a93c-4114-972f-b0084bb045bb" time="1388424154446" ignored="false" />
+    <file path="/registration.jade" changelist="6fc9e6b7-a93c-4114-972f-b0084bb045bb" time="1386171031414" ignored="false" />
+    <file path="/userController.js" changelist="6fc9e6b7-a93c-4114-972f-b0084bb045bb" time="1386245748464" ignored="false" />
+    <file path="/user.jade" changelist="6fc9e6b7-a93c-4114-972f-b0084bb045bb" time="1382353412602" ignored="false" />
+    <file path="/chat.js" changelist="6fc9e6b7-a93c-4114-972f-b0084bb045bb" time="1386073554330" ignored="false" />
+    <file path="/chat.jade" changelist="6fc9e6b7-a93c-4114-972f-b0084bb045bb" time="1386068262827" ignored="false" />
+    <file path="/main.js" changelist="6fc9e6b7-a93c-4114-972f-b0084bb045bb" time="1386344364326" ignored="false" />
+    <file path="/notAuthorized.jade" changelist="6fc9e6b7-a93c-4114-972f-b0084bb045bb" time="1382453150809" ignored="false" />
+    <file path="/userModel.js" changelist="6fc9e6b7-a93c-4114-972f-b0084bb045bb" time="1386152447399" ignored="false" />
+    <file path="/a.dummy" changelist="6fc9e6b7-a93c-4114-972f-b0084bb045bb" time="1389010851448" ignored="false" />
+    <file path="/_layout.jade" changelist="6fc9e6b7-a93c-4114-972f-b0084bb045bb" time="1386171020661" ignored="false" />
+    <file path="/chatController.js" changelist="6fc9e6b7-a93c-4114-972f-b0084bb045bb" time="1382686361492" ignored="false" />
+    <file path="/socket.js" changelist="6fc9e6b7-a93c-4114-972f-b0084bb045bb" time="1391855085295" ignored="false" />
+    <file path="/tests.js" changelist="6fc9e6b7-a93c-4114-972f-b0084bb045bb" time="1383239032330" ignored="false" />
+    <file path="/test-user.js" changelist="6fc9e6b7-a93c-4114-972f-b0084bb045bb" time="1385462569499" ignored="false" />
+    <file path="/a.js" changelist="6fc9e6b7-a93c-4114-972f-b0084bb045bb" time="1385473314583" ignored="false" />
+    <file path="/Core.DomManipulation.js" changelist="6fc9e6b7-a93c-4114-972f-b0084bb045bb" time="1386239848142" ignored="false" />
+    <file path="/Core.js" changelist="6fc9e6b7-a93c-4114-972f-b0084bb045bb" time="1386685756700" ignored="false" />
+    <file path="/Sandbox.js" changelist="6fc9e6b7-a93c-4114-972f-b0084bb045bb" time="1386353461032" ignored="false" />
+    <file path="/validation.js" changelist="6fc9e6b7-a93c-4114-972f-b0084bb045bb" time="1385986599177" ignored="false" />
+    <file path="/corkboard-message.js" changelist="6fc9e6b7-a93c-4114-972f-b0084bb045bb" time="1386345514218" ignored="false" />
+    <file path="/friend-request.js" changelist="6fc9e6b7-a93c-4114-972f-b0084bb045bb" time="1386083458021" ignored="false" />
+    <file path="/Core.Mediator.js" changelist="6fc9e6b7-a93c-4114-972f-b0084bb045bb" time="1386338990987" ignored="false" />
+    <file path="/Core.Socket.js" changelist="6fc9e6b7-a93c-4114-972f-b0084bb045bb" time="1386074931309" ignored="false" />
+    <file path="/Core.Utils.js" changelist="6fc9e6b7-a93c-4114-972f-b0084bb045bb" time="1386324062776" ignored="false" />
+    <file path="/notification.js" changelist="6fc9e6b7-a93c-4114-972f-b0084bb045bb" time="1386352736045" ignored="false" />
+    <file path="/Core.Templates.js" changelist="6fc9e6b7-a93c-4114-972f-b0084bb045bb" time="1386340987586" ignored="false" />
+    <file path="/registration.js" changelist="6fc9e6b7-a93c-4114-972f-b0084bb045bb" time="1386170702002" ignored="false" />
+    <file path="/Core.Ajax.js" changelist="6fc9e6b7-a93c-4114-972f-b0084bb045bb" time="1386164823037" ignored="false" />
+    <file path="/package.json" changelist="6fc9e6b7-a93c-4114-972f-b0084bb045bb" time="1386246565907" ignored="false" />
+    <file path="/gruntfile.js" changelist="6fc9e6b7-a93c-4114-972f-b0084bb045bb" time="1386168267455" ignored="false" />
+    <file path="/test.core.html" changelist="6fc9e6b7-a93c-4114-972f-b0084bb045bb" time="1386325010897" ignored="false" />
+    <file path="/test.core.js" changelist="6fc9e6b7-a93c-4114-972f-b0084bb045bb" time="1386335542189" ignored="false" />
+    <file path="/test.html" changelist="6fc9e6b7-a93c-4114-972f-b0084bb045bb" time="1388049134921" ignored="false" />
+    <file path="/assert.js" changelist="6fc9e6b7-a93c-4114-972f-b0084bb045bb" time="1389040396389" ignored="false" />
+    <file path="/test.core.mediator.js" changelist="6fc9e6b7-a93c-4114-972f-b0084bb045bb" time="1386338392913" ignored="false" />
+    <file path="/corkboard.js" changelist="6fc9e6b7-a93c-4114-972f-b0084bb045bb" time="1391854795701" ignored="false" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="SN" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="Core.Socket.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/core/Core.Socket.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="18" selection-start="279" selection-end="279" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="corkboard.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/modules/corkboard.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="20" selection-start="130" selection-end="130" vertical-scroll-proportion="0.0">
+              <folding>
+                <marker date="1391855471190" expanded="true" signature="143:156" placeholder="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="socket.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/socket.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="0" selection-start="439" selection-end="439" vertical-scroll-proportion="0.032075472">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="SYNC_SETTING" value="DONT" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="f7a24c5" />
+      </map>
+    </option>
+  </component>
+  <component name="GitLogSettings">
+    <option name="myStructureFilterPaths" />
+    <option name="myDateState">
+      <MyDateState />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/app/view/standalone/registration.jade" />
+        <option value="$PROJECT_DIR$/app/view/_layout.jade" />
+        <option value="$PROJECT_DIR$/out/api.js" />
+        <option value="$PROJECT_DIR$/out/index.html" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/public/js/main.js" />
+        <option value="$PROJECT_DIR$/public/js/sandbox/Sandbox.js" />
+        <option value="$PROJECT_DIR$/public/js/core/Core.Mediator.js" />
+        <option value="$PROJECT_DIR$/public/js/core/Core.js" />
+        <option value="$PROJECT_DIR$/public/js/core/Core.Ajax.js" />
+        <option value="$PROJECT_DIR$/public/js/test/assert.js" />
+        <option value="$PROJECT_DIR$/utils/index.js" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/app/controller/userController.js" />
+        <option value="$PROJECT_DIR$/public/js/modules/corkboard.js" />
+        <option value="$PROJECT_DIR$/socket.js" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="width" value="800" />
+    <option name="height" value="860" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Data flow issuesJavaScript</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>JavaScript validity issuesJavaScript</id>
+          </State>
+        </expanded-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers ProjectPane="false" />
+      <showModules />
+      <showLibraryContents ProjectPane="true" />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType ProjectPane="false" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SN" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SN" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Scalable-JavaScript-Architecture" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SN" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Scalable-JavaScript-Architecture" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SN" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Scalable-JavaScript-Architecture" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SN" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Scalable-JavaScript-Architecture" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SN" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Scalable-JavaScript-Architecture" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SN" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Scalable-JavaScript-Architecture" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SN" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Scalable-JavaScript-Architecture" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="middleware" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SN" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Scalable-JavaScript-Architecture" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SN" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Scalable-JavaScript-Architecture" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="vcs.Git" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="FullScreen" value="false" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\MH\Projects\SN\test" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\MH\Projects\SN\public\js\sandbox" />
+      <recent name="C:\MH\Projects\SN\public\js\core" />
+      <recent name="C:\MH\Projects\SN\app" />
+      <recent name="C:\MH\Projects\SN\utils" />
+      <recent name="C:\MH\Projects\SN\public\js\libraries" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Node.js.app.js">
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
+      <setting name="configLocationType" value="CONFIG_FILE" />
+      <setting name="settingsFile" value="" />
+      <setting name="serverType" value="INTERNAL" />
+      <setting name="preferredDebugBrowser" value="CHROME" />
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="$PROJECT_DIR$">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Node.js.app.js" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <changelist date="1382427948887">
+      <option name="PATH" value="C:\Users\Matthias\.WebStorm6\config\shelf\Working_on_friend_request_.patch" />
+      <option name="DESCRIPTION" value="Working on friend request." />
+      <binary>
+        <option name="BEFORE_PATH" value="private\keys\userB.key" />
+        <option name="AFTER_PATH" />
+        <option name="SHELVED_PATH" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" value="private\user_own.p12" />
+        <option name="AFTER_PATH" />
+        <option name="SHELVED_PATH" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" value="private\keys\userA.key" />
+        <option name="AFTER_PATH" />
+        <option name="SHELVED_PATH" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" value="private\certs\userA.crt" />
+        <option name="AFTER_PATH" />
+        <option name="SHELVED_PATH" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" value="private\certs\userB.crt" />
+        <option name="AFTER_PATH" />
+        <option name="SHELVED_PATH" />
+      </binary>
+    </changelist>
+    <changelist date="1382514826782">
+      <option name="PATH" value="C:\Users\Matthias\.WebStorm6\config\shelf\Working_on_client_side_js_.patch" />
+      <option name="DESCRIPTION" value="Working on client side js." />
+    </changelist>
+    <changelist date="1382702565833">
+      <option name="PATH" value="C:\Users\Matthias\.WebStorm6\config\shelf\misc____.patch" />
+      <option name="DESCRIPTION" value="misc ..." />
+    </changelist>
+    <changelist date="1386347384588">
+      <option name="PATH" value="C:\Users\Matthias\.WebStorm6\config\shelf\Switched_one_event_.patch" />
+      <option name="DESCRIPTION" value="Switched one event." />
+    </changelist>
+  </component>
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6fc9e6b7-a93c-4114-972f-b0084bb045bb" name="Default" comment="" />
+      <created>1381836657887</created>
+      <updated>1381836657887</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Initial commit:&#10;&#10;- sid within cookie remains the same by every request&#10;- database access works&#10;- isAuthenticated middelware works&#10;">
+      <created>1381846817188</created>
+      <updated>1381846817188</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Working on session storage&#10;">
+      <created>1381908984464</created>
+      <updated>1381908984464</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Basic socket.io implementation:&#10;&#10;- send data &quot;test&quot;&#10;- retrieving data from database&#10;">
+      <created>1381921554707</created>
+      <updated>1381921554707</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Implemented native express MemoryStore module.&#10;&#10;Session data is now available in socket&#10;">
+      <created>1381924287349</created>
+      <updated>1381924287349</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Error Handling socket.io authorization&#10;">
+      <created>1381924813908</created>
+      <updated>1381924813908</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Error Handling socket.io authorization&#10;">
+      <created>1381924915611</created>
+      <updated>1381924915611</updated>
+    </task>
+    <task id="LOCAL-00007" summary="A message sent from client to the socket server is saved in the according profile document. The new message is also sent to the client and gets displayed.">
+      <created>1381928832863</created>
+      <updated>1381928832863</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Implemented client side in profile.js. Added comments in app.js.">
+      <created>1382008878836</created>
+      <updated>1382008878836</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Implemented client side. Added comments in app.js. #1">
+      <created>1382008954643</created>
+      <updated>1382008954643</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Implemented client side in profile.js. Added comments in app.js. #1">
+      <created>1382009394045</created>
+      <updated>1382009394045</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Deleted session-mongoose and references in package.json&#10;&#10;Added registration page with redirect in middleware isAuthenticated">
+      <created>1382010593234</created>
+      <updated>1382010593234</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Added registrationController and registration view according to last commit">
+      <created>1382010673214</created>
+      <updated>1382010673214</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Implemented registration&#10;&#10;Added comment in registrationController">
+      <created>1382012188926</created>
+      <updated>1382012188926</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Implemented profile routing&#10;&#10;Added comments in profileController.js">
+      <created>1382013386906</created>
+      <updated>1382013386906</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Implemented user view&#10;&#10;Implemented registration routing (no registered user may request the side)">
+      <created>1382016183228</created>
+      <updated>1382016183228</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Show messages on profile view">
+      <created>1382022147210</created>
+      <updated>1382022147210</updated>
+    </task>
+    <task id="LOCAL-00017" summary="[Bug] Get User from Database even if it's the own profile. This is because messages don't get update in sesssion.">
+      <created>1382024303311</created>
+      <updated>1382024303311</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Added &quot;algorithm/utils/index.js&quot; which includes functions to sort messages by date (most recent first) and to format a date&#10;&#10;&#10;&#10;">
+      <created>1382087223077</created>
+      <updated>1382087223077</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Added session.profile_error on profileController and changed the res.render function.">
+      <created>1382088575140</created>
+      <updated>1382088575140</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Added bootstrap to project.&#10;&#10;Wrote basic css for profile.">
+      <created>1382102561473</created>
+      <updated>1382102561473</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Implemented real time chat.&#10;&#10;Added chatController.js, chat.jade and chat.js.&#10;&#10;Implemented Validation of message-fields in profile and chat view.">
+      <created>1382357276598</created>
+      <updated>1382357276598</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Css/HTML registration view.&#10;&#10;.jade formatting in all files.">
+      <created>1382358047500</created>
+      <updated>1382358047500</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Working on friend request.">
+      <created>1382427949303</created>
+      <updated>1382427949303</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Added notAuthorized view. &#10;&#10;Redirect from isAuthenticated middleware function to the view via registrationController.">
+      <created>1382453335833</created>
+      <updated>1382453335833</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Working on client side js.">
+      <created>1382514827168</created>
+      <updated>1382514827168</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Implemented friend functionality.&#10;&#10;- send friend request&#10;- accept friend request&#10;- decline friend request">
+      <created>1382620805185</created>
+      <updated>1382620805185</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Validate registration view.&#10;&#10;When a user goes back (using the browser's back functionality) and register again, he will be forward to his own profile page.">
+      <created>1382621205402</created>
+      <updated>1382621205402</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Pass model and utils from app.js to the index.js of controller.&#10;&#10;Edited file paths in requires to be relative.&#10;&#10;Structured project folders.">
+      <created>1382624546030</created>
+      <updated>1382624546031</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Changed export of the model module.">
+      <created>1382627581112</created>
+      <updated>1382627581112</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Changed routes. All routes are configured within /controller/index.js now.">
+      <created>1382686642353</created>
+      <updated>1382686642353</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Minor changes on app.js.">
+      <created>1382688484122</created>
+      <updated>1382688484122</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Minor changes on app.js (environments).">
+      <created>1382689221409</created>
+      <updated>1382689221409</updated>
+    </task>
+    <task id="LOCAL-00033" summary="misc ...">
+      <created>1382702566138</created>
+      <updated>1382702566138</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Changed chat view css.&#10;&#10;Fixed css bug at corkboard messages.">
+      <created>1382702955519</created>
+      <updated>1382702955519</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Implemented virtual for full_name. &#10;&#10;Therefore schemaOption where required.">
+      <created>1382703386794</created>
+      <updated>1382703386794</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Implemented static methods for userSchema.">
+      <created>1382705936748</created>
+      <updated>1382705936748</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Changed Certificates.&#10;&#10;Fixed Bug: Friend-Request Notification. All messages where fading out.">
+      <created>1382957709069</created>
+      <updated>1382957709069</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Renamed algorithm folder to utils.">
+      <created>1382962849113</created>
+      <updated>1382962849113</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Changed directory structure, added an app folder for controller, mode and view.">
+      <created>1382964433910</created>
+      <updated>1382964433910</updated>
+    </task>
+    <task id="LOCAL-00040" summary="(Re-)Added &quot;../public/img&quot; folder to Git.">
+      <created>1382964575413</created>
+      <updated>1382964575414</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Implemented Validation in userModel. (For: first_name, last_name, email and the uniqueness of a user in database)&#10;&#10;Implemented validation in registrationController.js resp. registration view.">
+      <created>1383034546330</created>
+      <updated>1383034546330</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Implemented registration view validation, changed userModel validation.&#10;&#10;Validation if the user already exists in db is now performed by mongoose's duplicate key error.">
+      <created>1383223611139</created>
+      <updated>1383223611139</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Implemented userSchema's statics in socket.io implementation.">
+      <created>1383228420625</created>
+      <updated>1383228420625</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Refactored userSchemas: message.from to messages._id">
+      <created>1383229368614</created>
+      <updated>1383229368614</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Excluded socket implementation from app.js to socket.js">
+      <created>1383233235290</created>
+      <updated>1383233235290</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Implemented userSchema's statics in controller implementation.">
+      <created>1383240140683</created>
+      <updated>1383240140683</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Changed database api.">
+      <created>1383747156625</created>
+      <updated>1383747156625</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Middle ware improvements involving the default route.&#10;&#10;Added devDependencies for tests.">
+      <created>1383748115413</created>
+      <updated>1383748115413</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Added test files to project.&#10;&#10;Expose server in app.js.">
+      <created>1383812734609</created>
+      <updated>1383812734609</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Wrote tests for User Collection.&#10;Wrote tests for two Routes. (no certificate required routes)&#10;&#10;Added async-module to project.">
+      <created>1385394837387</created>
+      <updated>1385394837387</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Fixed path to certificates in test.&#10;&#10;">
+      <created>1385475266623</created>
+      <updated>1385475266623</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Refactored client-side architecture.&#10;&#10;Minor changes on the server side.">
+      <created>1386084372374</created>
+      <updated>1386084372374</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Added and implemented registration.js and Core.Ajax.js.">
+      <created>1386159403666</created>
+      <updated>1386159403666</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Minified, concatenate and gzipped javascript.&#10;Ran JSHint through project.">
+      <created>1386171920460</created>
+      <updated>1386171920460</updated>
+    </task>
+    <task id="LOCAL-00055" summary="Added certs. Split tests.">
+      <created>1386172851065</created>
+      <updated>1386172851065</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Fixed a bug on client side javascript, regarding flash messages on corkboard messages and friend notifications.&#10;&#10;Added jshint and yuidocjs to project.">
+      <created>1386245183915</created>
+      <updated>1386245183915</updated>
+    </task>
+    <task id="LOCAL-00057" summary="Fixed a bug that allowed cross site scripting (XSS) by sending corkboard or chat messages.">
+      <created>1386247063052</created>
+      <updated>1386247063052</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Fixed a bug regarding the redirection on the profile view.">
+      <created>1386247387229</created>
+      <updated>1386247387229</updated>
+    </task>
+    <task id="LOCAL-00059" summary="Renamed user.jade to users.jade.&#10;&#10;Commenting.">
+      <created>1386258885759</created>
+      <updated>1386258885759</updated>
+    </task>
+    <task id="LOCAL-00060" summary="Switched one event.">
+      <created>1386347384879</created>
+      <updated>1386347384879</updated>
+    </task>
+    <task id="LOCAL-00061" summary="Added and implemented client side testing.&#10;&#10;Implemented permissions for socket communication (proxy pattern)in sandbox.js">
+      <created>1386354170919</created>
+      <updated>1386354170919</updated>
+    </task>
+    <task id="LOCAL-00062" summary="Minor changes on server side tests.">
+      <created>1386354266379</created>
+      <updated>1386354266379</updated>
+    </task>
+    <task id="LOCAL-00063" summary="Check-In after long time, before the start of code formatting.&#10;&#10;Bug fix in utils/index.js.">
+      <created>1388850588637</created>
+      <updated>1388850588637</updated>
+    </task>
+    <task id="LOCAL-00064" summary="Code formatting and documentation. #1">
+      <created>1388864399345</created>
+      <updated>1388864399345</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
+    <servers />
+  </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="800" height="860" extended-state="1" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.234375" sideWeight="0.49968293" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286908" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30486202" sideWeight="0.81054133" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39944133" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25977653" sideWeight="0.50031704" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18945868" sideWeight="0.49968293" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32451254" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3125" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21787709" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_NEW_TODO" value="true" />
+    <option name="myTodoPanelSettings">
+      <value>
+        <are-packages-shown value="false" />
+        <are-modules-shown value="false" />
+        <flatten-packages value="false" />
+        <is-autoscroll-to-source value="false" />
+      </value>
+    </option>
+    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
+    <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
+    <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
+    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
+    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
+    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
+    <option name="SHORT_DIFF_HORIZONTALLY" value="true" />
+    <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
+    <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
+    <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
+    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+    <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
+    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
+    <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
+    <option name="LIMIT_HISTORY" value="true" />
+    <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
+    <option name="UPDATE_FILTER_SCOPE_NAME" />
+    <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
+    <option name="COMMIT_MESSAGE_MARGIN_SIZE" value="72" />
+    <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
+    <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
+    <option name="LAST_COMMIT_MESSAGE" value="Code formatting and documentation. #1" />
+    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
+    <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
+    <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
+    <option name="ACTIVE_VCS_NAME" />
+    <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
+    <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
+    <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
+    <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
+    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+    <MESSAGE value="(Re-)Added &quot;../public/img&quot; folder to Git." />
+    <MESSAGE value="Implemented Validation in userModel. (For: first_name, last_name, email and the uniqueness of a user in database)&#10;&#10;Implemented validation in registrationController.js resp. registration view." />
+    <MESSAGE value="Implemented registration view validation, changed userModel validation.&#10;&#10;Validation if the user already exists in db is now performed by mongoose's duplicate key error." />
+    <MESSAGE value="Implemented userSchema's statics in socket.io implementation." />
+    <MESSAGE value="Refactored userSchemas: message.from to messages._id" />
+    <MESSAGE value="Excluded socket implementation from app.js to socket.js" />
+    <MESSAGE value="Implemented userSchema's statics in controller implementation." />
+    <MESSAGE value="Changed database api." />
+    <MESSAGE value="Middle ware improvements involving the default route.&#10;&#10;Added devDependencies for tests." />
+    <MESSAGE value="Added test files to project.&#10;&#10;Expose server in app.js." />
+    <MESSAGE value="Wrote tests for User Collection.&#10;Wrote tests for two Routes. (no certificate required routes)&#10;&#10;Added async-module to project." />
+    <MESSAGE value="Fixed path to certificates in test.&#10;&#10;" />
+    <MESSAGE value="Refactored client-side architecture.&#10;&#10;Minor changes on the server side." />
+    <MESSAGE value="Added and implemented registration.js and Core.Ajax.js." />
+    <MESSAGE value="Minified, concatenate and gzipped javascript.&#10;Ran JSHint through project." />
+    <MESSAGE value="Added certs. Split tests." />
+    <MESSAGE value="Fixed a bug on client side javascript, regarding flash messages on corkboard messages and friend notifications.&#10;&#10;Added jshint and yuidocjs to project." />
+    <MESSAGE value="Fixed a bug that allowed cross site scripting (XSS) by sending corkboard or chat messages." />
+    <MESSAGE value="Fixed a bug regarding the redirection on the profile view." />
+    <MESSAGE value="Renamed user.jade to users.jade.&#10;&#10;Commenting." />
+    <MESSAGE value="Switched one event." />
+    <MESSAGE value="Added and implemented client side testing.&#10;&#10;Implemented permissions for socket communication (proxy pattern)in sandbox.js" />
+    <MESSAGE value="Minor changes on server side tests." />
+    <MESSAGE value="Check-In after long time, before the start of code formatting.&#10;&#10;Bug fix in utils/index.js." />
+    <MESSAGE value="Code formatting and documentation. #1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/public/js/test/assert.js</url>
+          <line>12</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="10" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/public/js/test/test.core.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="9" selection-start="169" selection-end="169" vertical-scroll-proportion="0.16927454" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/test/assert.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="25" selection-start="394" selection-end="394" vertical-scroll-proportion="0.24182077">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/userModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="0" selection-start="392" selection-end="1017" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/chat.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/profile.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="0" selection-start="2304" selection-end="2459" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controller/profileController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="90" column="46" selection-start="2518" selection-end="2518" vertical-scroll-proportion="0.8947368" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controller/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="36" selection-start="534" selection-end="534" vertical-scroll-proportion="0.33202356" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/middleware/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controller/registrationController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="83" column="83" selection-start="2340" selection-end="2340" vertical-scroll-proportion="0.032075472" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controller/userController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="26" selection-start="95" selection-end="95" vertical-scroll-proportion="0.09622642" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controller/chatController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="43" selection-start="188" selection-end="188" vertical-scroll-proportion="0.16699411" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="58" selection-start="939" selection-end="939" vertical-scroll-proportion="0.73477405" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/modules/corkboard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="20" selection-start="130" selection-end="130" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1391855471190" expanded="true" signature="143:156" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/core/Core.Socket.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="18" selection-start="279" selection-end="279" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/socket.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="439" selection-end="439" vertical-scroll-proportion="0.032075472">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+

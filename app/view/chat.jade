@@ -1,0 +1,10 @@
+extends _layout
+
+block content
+    h1= title
+
+    div#chat-message-list(style='width: 500px; height: 300px; margin: 0 0 20px 0; border: solid 1px #999; overflow-y: scroll;')
+    div.controls
+        input#new-chat-message(type="text" autofocus="true" style='width: 425px; margin: 0px 5px 0px 0px;')
+        button#send-chat-message(class="btn btn-primary") Send
+

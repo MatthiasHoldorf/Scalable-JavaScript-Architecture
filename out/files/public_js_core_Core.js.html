@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>public\js\core\Core.js</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+    <script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+    <div id="hd" class="yui3-g header">
+        <div class="yui3-u-3-4">
+            
+                <h1><img src="../assets/css/logo.png" title=""></h1>
+            
+        </div>
+        <div class="yui3-u-1-4 version">
+            <em>API Docs for: </em>
+        </div>
+    </div>
+    <div id="bd" class="yui3-g">
+
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+    <h2 class="off-left">APIs</h2>
+    <div id="api-tabview" class="tabview">
+        <ul class="tabs">
+            <li><a href="#api-classes">Classes</a></li>
+            <li><a href="#api-modules">Modules</a></li>
+        </ul>
+
+        <div id="api-tabview-filter">
+            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+        </div>
+
+        <div id="api-tabview-panel">
+            <ul id="api-classes" class="apis classes">
+            
+                <li><a href="../classes/Client_Core_Core.Ajax.js.html">Client_Core_Core.Ajax.js</a></li>
+            
+                <li><a href="../classes/Client_Core_Core.DomManipulation.js.html">Client_Core_Core.DomManipulation.js</a></li>
+            
+                <li><a href="../classes/Client_Core_Core.js.html">Client_Core_Core.js</a></li>
+            
+                <li><a href="../classes/Client_Core_Core.Mediator.js.html">Client_Core_Core.Mediator.js</a></li>
+            
+                <li><a href="../classes/Client_Core_Core.Socket.js.html">Client_Core_Core.Socket.js</a></li>
+            
+                <li><a href="../classes/Client_Core_Core.Templates.js.html">Client_Core_Core.Templates.js</a></li>
+            
+                <li><a href="../classes/Client_Core_Core.Utils.js.html">Client_Core_Core.Utils.js</a></li>
+            
+                <li><a href="../classes/Client_Main.js.html">Client_Main.js</a></li>
+            
+                <li><a href="../classes/Client_Modules_chat.js.html">Client_Modules_chat.js</a></li>
+            
+                <li><a href="../classes/Client_Modules_corkboard.js.html">Client_Modules_corkboard.js</a></li>
+            
+                <li><a href="../classes/Client_Modules_friend-request.js.html">Client_Modules_friend-request.js</a></li>
+            
+                <li><a href="../classes/Client_Modules_notification.js.html">Client_Modules_notification.js</a></li>
+            
+                <li><a href="../classes/Client_Modules_registration.js.html">Client_Modules_registration.js</a></li>
+            
+                <li><a href="../classes/Client_Sandbox.js.html">Client_Sandbox.js</a></li>
+            
+                <li><a href="../classes/Server_App_database.js.html">Server_App_database.js</a></li>
+            
+                <li><a href="../classes/Server_App_Gruntfile.js.html">Server_App_Gruntfile.js</a></li>
+            
+                <li><a href="../classes/Server_App_middleware.js.html">Server_App_middleware.js</a></li>
+            
+                <li><a href="../classes/Server_App_Socket.js.html">Server_App_Socket.js</a></li>
+            
+                <li><a href="../classes/Server_App_Utils.js.html">Server_App_Utils.js</a></li>
+            
+                <li><a href="../classes/Server_Controller_chatController.js.html">Server_Controller_chatController.js</a></li>
+            
+                <li><a href="../classes/Server_Controller_profileController.js.html">Server_Controller_profileController.js</a></li>
+            
+                <li><a href="../classes/Server_Controller_registrationController.js.html">Server_Controller_registrationController.js</a></li>
+            
+                <li><a href="../classes/Server_Controller_userController.js.html">Server_Controller_userController.js</a></li>
+            
+                <li><a href="../classes/Server_Model_userModel.js.html">Server_Model_userModel.js</a></li>
+            
+            </ul>
+
+            <ul id="api-modules" class="apis modules">
+            
+                <li><a href="../modules/App.js.html">App.js</a></li>
+            
+                <li><a href="../modules/Client_Core.js.html">Client_Core.js</a></li>
+            
+                <li><a href="../modules/Client_Modules.js.html">Client_Modules.js</a></li>
+            
+                <li><a href="../modules/Client_Sandbox.js.html">Client_Sandbox.js</a></li>
+            
+                <li><a href="../modules/Server_App.js.html">Server_App.js</a></li>
+            
+                <li><a href="../modules/Server_Controller.js.html">Server_Controller.js</a></li>
+            
+                <li><a href="../modules/Server_Model.js.html">Server_Model.js</a></li>
+            
+            </ul>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+        Show:
+        <label for="api-show-inherited">
+            <input type="checkbox" id="api-show-inherited" checked>
+            Inherited
+        </label>
+
+        <label for="api-show-protected">
+            <input type="checkbox" id="api-show-protected">
+            Protected
+        </label>
+
+        <label for="api-show-private">
+            <input type="checkbox" id="api-show-private">
+            Private
+        </label>
+        <label for="api-show-deprecated">
+            <input type="checkbox" id="api-show-deprecated">
+            Deprecated
+        </label>
+
+    </div>
+
+
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+                        <h1 class="file-heading">File: public\js\core\Core.js</h1>
+
+<div class="file">
+    <pre class="code prettyprint linenums">
+/**
+ The Core.js provides functionality to register, start and stop modules of the application.
+
+ @module Client_Core.js
+ @class Client_Core_Core.js
+ **/
+var Core = (function() {
+    ///////////////////
+    // private scope
+
+     /**
+     Contains the registered modules.
+
+     @property moduleData
+     @type Object
+     **/
+    var moduleData     = {},
+        runningModules = {};
+
+    ///////////////////
+    // public scope
+    return {
+
+        /**
+         Registers a module by the moduleId parameter as the key and the creator parameter as the function.
+
+         This method will throw an error if:
+         - The moduleId parameter provided isn&#x27;t a String
+         - The moduleId parameter provided isn&#x27;t at least 3 characters long
+         - The creator parameter provided isn&#x27;t a function
+
+         @param moduleId {String} The module name
+         @param creator  {Function} The module function itself
+         @method register
+         **/
+        register : function(moduleId, creator) {
+            if (!(typeof moduleId === &quot;string&quot;)) {
+                throw new Error(&quot;The moduleId is not a string&quot;)
+            }
+
+            if (!(moduleId.length &gt;= 2)) {
+                throw new Error(&quot;The moduleId must contain at least 2 characters&quot;)
+            }
+
+            if (!(Object.prototype.toString.call(creator) === &quot;[object Function]&quot;)) {
+                throw new Error(&quot;The creator must be a function&quot;);
+            }
+
+            moduleData[moduleId] = {
+                creator: creator,
+                instance: null
+            };
+        },
+
+        /**
+         Removes a module identified by the provided moduleId.
+
+         This method will throw an error if:
+         - No module can be find by the provided moduleId
+
+         @param moduleId {String} The module name
+         @method remove
+         **/
+        remove : function(moduleId) {
+            if (moduleData[moduleId] === undefined) {
+                throw new Error(&quot;Attempt to remove a module that has not been registered: &quot; + moduleId);
+            }
+
+            delete moduleData[moduleId];
+        },
+
+        /**
+         Starts a module identified by the  moduleId parameter, if the module isn&#x27;t already running.
+
+         This method will throw an error if:
+         - No module can be find by the provided moduleId parameter
+
+         @param moduleId {String} The module name
+         @method start
+         **/
+        start : function(moduleId) {
+            if (moduleData[moduleId] === undefined) {
+                throw new Error(&quot;Attempt to start a module that has not been registered: &quot; + moduleId);
+            }
+            // only start a module that isn&#x27;t already started
+            else if (moduleData[moduleId].instance === null) {
+                moduleData[moduleId].instance = moduleData[moduleId].creator(new Sandbox(this , moduleId));
+
+                try {
+                    moduleData[moduleId].instance.init();
+                    runningModules[moduleId] = moduleData[moduleId];
+                }
+                catch(e) {
+                    throw new Error(&quot;The creator must have a property init of type function&quot;);
+                }
+
+                console.log(&quot;start: &quot; + moduleId);
+            }
+        },
+
+        /**
+         Stops a module identified by the provided moduleId.
+
+         This method will throw an error if:
+         - No module can be find by the provided moduleId
+
+         @param moduleId {String} The module namee
+         @method stop
+         **/
+        stop : function(moduleId) {
+            if (moduleData[moduleId] === undefined) {
+                throw new Error(&quot;Attempt to stop a module that has not been registered: &quot; + moduleId);
+            }
+
+            var data = moduleData[moduleId];
+            if (data.instance) {
+                data.instance.destroy();
+                data.instance = null;
+            }
+        },
+
+        /**
+         Starts all registered modules of the Core.
+
+         @method startAll
+         **/
+        startAll : function() {
+            for (var moduleId in moduleData) {
+                if (moduleData.hasOwnProperty(moduleId)) {
+                    this.start(moduleId);
+                    console.log(moduleId);
+                }
+            }
+        },
+
+        /**
+         Stops all running modules of the Core.
+
+         @method stopAll
+         **/
+        stopAll : function() {
+            for (var moduleId in moduleData) {
+                if (moduleData.hasOwnProperty(moduleId)) {
+                    this.stop(moduleId);
+                }
+            }
+        },
+
+        /**
+         Returns the registered modules of the Core.
+
+         @method getModuleData
+         @return an array of modules
+         **/
+        getModuleData : function() {
+            return moduleData;
+        },
+
+        /**
+         Returns all running modules of the Core.
+
+         @method getRunningModules
+         @return an array of modules
+         **/
+        getRunningModules : function() {
+            return runningModules;
+        }
+
+    };
+}());
+    </pre>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/../api.js"></script>
+<script src="../assets/js/api-filter.js"></script>
+<script src="../assets/js/api-list.js"></script>
+<script src="../assets/js/api-search.js"></script>
+<script src="../assets/js/apidocs.js"></script>
+</body>
+</html>

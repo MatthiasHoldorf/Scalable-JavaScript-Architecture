@@ -1,0 +1,1 @@
+The password of any .p12-file is "root".

@@ -1,0 +1,52 @@
+doctype 5
+html
+    head
+        title= title
+
+        // stylesheet
+        link(rel='stylesheet', href='/css/bootstrap.min.css')
+        link(rel='stylesheet', href='/css/bootstrap-responsive.min.css')
+        link(rel='stylesheet', href='/css/main.css')
+
+        body
+            div(class="navbar navbar-inverse navbar-fixed-top")
+                div(class="navbar-inner")
+                    div(class="container")
+                        div(class="nav-collapse collapse")
+                            ul(class="nav")
+                                li
+                                    a(href="/profile") Profile
+                                li
+                                    a(href="/users") Users
+                                li
+                                    a(href="/chat") Chat
+
+            div(class="container")
+                block content
+
+            // javascript
+            if(!(env == "production"))
+                // libraries
+                script(rel="text/javascript" src="/js/libraries/jquery-1.10.2.js");
+                script(rel="text/javascript" src="/js/libraries/jquery.color-2.1.0.js");
+                script(rel="text/javascript" src="/js/libraries/socket.io.js");
+                // application core
+                script(rel="text/javascript", src="/js/core/Core.js")
+                script(rel="text/javascript", src="/js/core/Core.DomManipulation.js")
+                script(rel="text/javascript", src="/js/core/Core.Ajax.js")
+                script(rel="text/javascript", src="/js/core/Core.Templates.js")
+                script(rel="text/javascript", src="/js/core/Core.Mediator.js")
+                script(rel="text/javascript", src="/js/core/Core.Socket.js")
+                script(rel="text/javascript", src="/js/core/Core.Utils.js")
+                // sandbox
+                script(rel="text/javascript", src="/js/sandbox/Sandbox.js")
+                // modules
+                script(rel="text/javascript", src="/js/modules/corkboard.js")
+                script(rel="text/javascript", src="/js/modules/friend-request.js")
+                script(rel="text/javascript", src="/js/modules/notification.js")
+                script(rel="text/javascript", src="/js/modules/chat.js")
+                script(rel="text/javascript", src="/js/modules/registration.js")
+                // main.js - entry point
+                script(rel="text/javascript", src="/js/main.js")
+            if(env == "production")
+                script(rel="text/javascript", src="/js_min/client.min.js")

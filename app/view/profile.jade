@@ -1,0 +1,76 @@
+extends _layout
+
+block content
+    h1= title
+
+    div(class="row-fluid")
+        div(class="span2")
+            img(src="/img/no_picture.png" class="img-polaroid")
+
+        div(class="span2")
+            dl(class="dl-horizontal")
+                dt First Name:
+                    dd= user.first_name
+                dt Last Name:
+                    dd= user.last_name
+                dt E-Mail:
+                    dd
+                        a(href="mailto:#")=  " " + user.email
+
+        div(class="span3 offset3")
+              textarea(id="new-corkboard-message" autofocus="true" placeholder=placeholder)
+              br
+              button#send-corkboard-message(class="btn btn-primary") Send
+
+        if(!ownProfile)
+            div#friend-request-send-controls(class="span2")
+                case friendStatus
+                    when "unknown"
+                        button#send-friend-request(class="btn btn-success") Send friend request
+                    when "pending"
+                        div(class="pending-friend-request") Pending friend request
+                    when "friends"
+                        div(class="friend") Friends
+
+    hr
+
+    div(class="row-fluid")
+
+        div(class="span7 borderd")
+            if(ownProfile)
+                if(user.pendingFriendRequests)
+                div(class="")
+                    h2 Notifications
+                    hr
+                    if(error)
+                        p.error= error
+                    ul#friend-request-notification
+                        each requestUser in user.pendingFriendRequests
+                            li(data-request-id=requestUser._id)
+                                span The User
+                                a(href="/profile?userId=" + requestUser._id)= requestUser.name
+                                span wants to be friends with you!
+                                div(class="friend-request-react-controls")
+                                    a(href="javascript:void(0)" class="accept-friend-request" data-request-id=requestUser._id) accept
+                                    a(href="javascript:void(0)" class="decline-friend-request" data-request-id=requestUser._id) decline
+
+            div(class="")
+                h2 Friends
+                hr
+                ul#friend-list
+                    each friend in user.friends
+                        li
+                            a(href="/profile?userId=" + friend._id)= friend.name
+
+        div(class="span5 borderd")
+            h2 Corkboard
+            hr
+            ul#corkboard-message-list
+                each message in user.messages
+                    li
+                        div(class="corkboard-message borderd")
+                            small(class="corkboard-message-details")
+                                a(class="corkboard-message-user" href="/profile?userId=" + message.from + "")= message.name +  " "
+                                span wrote
+                                span(class="corkboard-message-date")= "at " + message.date
+                            div(class="corkboard-message-body")= message.body

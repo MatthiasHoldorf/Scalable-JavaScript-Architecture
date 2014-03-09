@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>socket.js</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+    <script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+    <div id="hd" class="yui3-g header">
+        <div class="yui3-u-3-4">
+            
+                <h1><img src="../assets/css/logo.png" title=""></h1>
+            
+        </div>
+        <div class="yui3-u-1-4 version">
+            <em>API Docs for: </em>
+        </div>
+    </div>
+    <div id="bd" class="yui3-g">
+
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+    <h2 class="off-left">APIs</h2>
+    <div id="api-tabview" class="tabview">
+        <ul class="tabs">
+            <li><a href="#api-classes">Classes</a></li>
+            <li><a href="#api-modules">Modules</a></li>
+        </ul>
+
+        <div id="api-tabview-filter">
+            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+        </div>
+
+        <div id="api-tabview-panel">
+            <ul id="api-classes" class="apis classes">
+            
+                <li><a href="../classes/Client_Core_Core.Ajax.js.html">Client_Core_Core.Ajax.js</a></li>
+            
+                <li><a href="../classes/Client_Core_Core.DomManipulation.js.html">Client_Core_Core.DomManipulation.js</a></li>
+            
+                <li><a href="../classes/Client_Core_Core.js.html">Client_Core_Core.js</a></li>
+            
+                <li><a href="../classes/Client_Core_Core.Mediator.js.html">Client_Core_Core.Mediator.js</a></li>
+            
+                <li><a href="../classes/Client_Core_Core.Socket.js.html">Client_Core_Core.Socket.js</a></li>
+            
+                <li><a href="../classes/Client_Core_Core.Templates.js.html">Client_Core_Core.Templates.js</a></li>
+            
+                <li><a href="../classes/Client_Core_Core.Utils.js.html">Client_Core_Core.Utils.js</a></li>
+            
+                <li><a href="../classes/Client_Main.js.html">Client_Main.js</a></li>
+            
+                <li><a href="../classes/Client_Modules_chat.js.html">Client_Modules_chat.js</a></li>
+            
+                <li><a href="../classes/Client_Modules_corkboard.js.html">Client_Modules_corkboard.js</a></li>
+            
+                <li><a href="../classes/Client_Modules_friend-request.js.html">Client_Modules_friend-request.js</a></li>
+            
+                <li><a href="../classes/Client_Modules_notification.js.html">Client_Modules_notification.js</a></li>
+            
+                <li><a href="../classes/Client_Modules_registration.js.html">Client_Modules_registration.js</a></li>
+            
+                <li><a href="../classes/Client_Sandbox.js.html">Client_Sandbox.js</a></li>
+            
+                <li><a href="../classes/Server_App_database.js.html">Server_App_database.js</a></li>
+            
+                <li><a href="../classes/Server_App_Gruntfile.js.html">Server_App_Gruntfile.js</a></li>
+            
+                <li><a href="../classes/Server_App_middleware.js.html">Server_App_middleware.js</a></li>
+            
+                <li><a href="../classes/Server_App_Socket.js.html">Server_App_Socket.js</a></li>
+            
+                <li><a href="../classes/Server_App_Utils.js.html">Server_App_Utils.js</a></li>
+            
+                <li><a href="../classes/Server_Controller_chatController.js.html">Server_Controller_chatController.js</a></li>
+            
+                <li><a href="../classes/Server_Controller_profileController.js.html">Server_Controller_profileController.js</a></li>
+            
+                <li><a href="../classes/Server_Controller_registrationController.js.html">Server_Controller_registrationController.js</a></li>
+            
+                <li><a href="../classes/Server_Controller_userController.js.html">Server_Controller_userController.js</a></li>
+            
+                <li><a href="../classes/Server_Model_userModel.js.html">Server_Model_userModel.js</a></li>
+            
+            </ul>
+
+            <ul id="api-modules" class="apis modules">
+            
+                <li><a href="../modules/App.js.html">App.js</a></li>
+            
+                <li><a href="../modules/Client_Core.js.html">Client_Core.js</a></li>
+            
+                <li><a href="../modules/Client_Modules.js.html">Client_Modules.js</a></li>
+            
+                <li><a href="../modules/Client_Sandbox.js.html">Client_Sandbox.js</a></li>
+            
+                <li><a href="../modules/Server_App.js.html">Server_App.js</a></li>
+            
+                <li><a href="../modules/Server_Controller.js.html">Server_Controller.js</a></li>
+            
+                <li><a href="../modules/Server_Model.js.html">Server_Model.js</a></li>
+            
+            </ul>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+        Show:
+        <label for="api-show-inherited">
+            <input type="checkbox" id="api-show-inherited" checked>
+            Inherited
+        </label>
+
+        <label for="api-show-protected">
+            <input type="checkbox" id="api-show-protected">
+            Protected
+        </label>
+
+        <label for="api-show-private">
+            <input type="checkbox" id="api-show-private">
+            Private
+        </label>
+        <label for="api-show-deprecated">
+            <input type="checkbox" id="api-show-deprecated">
+            Deprecated
+        </label>
+
+    </div>
+
+
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+                        <h1 class="file-heading">File: socket.js</h1>
+
+<div class="file">
+    <pre class="code prettyprint linenums">
+/**
+ The Socket.js is used for real-time communication with the client, including the following functionality:
+ - authorization to store the user&#x27;s session into the session store
+ - separation of sockets with rooms (namespaces)
+ - listens to the events: sendCorkboardMessage, sendFriendRequest, acceptFriendRequest, declineFriendRequest and sendChatMessage
+
+ @module Server_App.js
+ @class Server_App_Socket.js
+ **/
+
+// module dependencies
+var utils       = require(&quot;./utils&quot;),
+    model       = require(&quot;./app/model&quot;),
+    io          = require(&quot;socket.io&quot;),
+    parseCookie = require(&quot;express&quot;).cookieParser(&quot;secret&quot;),
+    sanitizer   = require(&quot;sanitizer&quot;),
+    // when a clients (re)connects to the chat, previous message are displayed
+    previousMessages = [];
+
+module.exports = function(server, sessionStore) {
+
+    ///////////////////
+    // start socket server
+    var sio = io.listen(server);
+
+    ///////////////////
+    // disable socket.io debugging
+    sio.set(&#x27;log level&#x27;, 1);
+
+    ///////////////////
+    // authorization
+    sio.set(&#x27;authorization&#x27;, function(handshake, accept) {
+
+        // no cookies where send
+        if (!handshake.headers) {
+            return accept(&#x27;Cookie required.&#x27;, false);
+        }
+
+        // 1) parse cookie to get the sid
+        // 2) get the session from session store by the sid as key
+        // 3) save the session into the handshake object
+        parseCookie(handshake, null, function(error) {
+            if (error) {
+                return accept(&quot;Error parsing Cookie.&quot;, false);
+            }
+            else {
+                var sessionID = handshake.signedCookies[&quot;connect.sid&quot;];
+
+                if (sessionID) {
+                    sessionStore.get(sessionID, function(error, session) {
+                        if (error) {
+                            return accept(&quot;Error in session store.&quot;, false);
+                        }
+                        else if (!session) {
+                            return accept(&quot;Session not found.&quot;, false);
+                        }
+                        else {
+                            // success: session found
+                            handshake.session = session;
+                            return accept(null, true);
+                        }
+                    });
+                }
+            }
+        });
+
+    });
+
+
+    ///////////////////
+    // socket.io connection
+    sio.on(&quot;connection&quot;, function(socket) {
+
+        ///////////////////
+        // rooms
+        // owner of a specific profile page
+        socket.join(socket.handshake.session.user._id);
+        // people viewing a specific profile page
+        socket.join(&quot;viewing-profile:&quot; + socket.handshake.session.last_visited_profileId);
+
+        ///////////////////
+        // initialize chat
+        // by connection to the socket (only one time) emit older chat messages, if there are any and the user is on the chat page
+        var location = (socket.handshake.headers.referer).split(&quot;/&quot;);
+        if (previousMessages.length &amp;&amp; (location[location.length - 1] == &quot;chat&quot;)) {
+            socket.emit(&quot;chat-message-initial&quot;, previousMessages);
+        }
+
+        ///////////////////
+        // events
+        // profile.jade [corkboard]
+        socket.on(&quot;send-corkboard-message&quot;, sendCorkboardMessage);
+
+        // profile.jade [friend-request]
+        socket.on(&quot;send-friend-request&quot;, sendFriendRequest);
+        socket.on(&quot;accept-friend-request&quot;, acceptFriendRequest);
+        socket.on(&quot;decline-friend-request&quot;, declineFriendRequest);
+
+        // chat.jade [chat]
+        socket.on(&quot;send-chat-message&quot;, sendChatMessage);
+
+        ///////////////////
+        // methods
+
+
+        /**
+         When a client emits a corkboard message, query the user&#x27;s profile,
+         to whom the message will be send (session.last_visited_profileId).
+         Create a message object, save it to that user and emit the message object to all clients viewing this profile.
+
+         @param data
+         @method sendCorkboardMessage
+         **/
+        function sendCorkboardMessage(data) {
+            // only proceed if message contains at least 1 character
+            if (data.body.length &gt; 0) {
+
+                // find profile to whom the message will be emitted
+                model.UserModel.getUser(socket.handshake.session.last_visited_profileId, function(user) {
+
+                    // create message
+                    var message = {
+                        _id  : socket.handshake.session.user._id,
+                        name : socket.handshake.session.user.first_name,
+                        body : data.body,
+                        date : new Date().setMonth(new Date().getMonth())
+                    };
+
+                    // apply message to user and save user
+                    user.messages.push(message);
+                    user.save();
+
+                    // format message before sending it to client
+                    message.date = utils.formatDate(message.date);
+
+                    // escape message
+                    message.body = sanitizer.escape(message.body);
+
+                    // emit message to all clients that view the specific profile page
+                    sio.sockets.in(&quot;viewing-profile:&quot; + socket.handshake.session.last_visited_profileId).emit(&quot;corkboard-message&quot;, message);
+                });
+            }
+        }
+
+        /**
+         Sends a friend request to the user whom the request is related to.
+
+         @method sendFriendRequest
+         **/
+        function sendFriendRequest() {
+            var profileId = socket.handshake.session.last_visited_profileId;
+
+            // find user to whom the friend request is related to
+            model.UserModel.getUser(profileId, function(user) {
+
+                // validation
+                // validate if there is already a pending friend request to that user
+                var hasPendingFriendRequest = utils.inArray(user.pendingFriendRequests, &quot;_id&quot;, profileId);
+
+                // validate if the users are already friends
+                var areAlreadyFriends = utils.inArray(user.friends, &quot;_id&quot;, profileId);
+
+                if (!hasPendingFriendRequest &amp;&amp; !areAlreadyFriends) {
+
+                    user.pendingFriendRequests.push({
+                        _id : socket.handshake.session.user._id,
+                        name : socket.handshake.session.user.first_name + &quot; &quot; + socket.handshake.session.user.last_name
+                    });
+
+                    // update user in database
+                    user.save(function(error) {
+                        if (error) {
+                            console.log(&quot;Error saving\n&quot; + error);
+                        }
+                        else {
+                            // operation completed with success
+                            socket.emit(&quot;response-send-friend-request&quot;, { type : &quot;response-send-friend-request&quot; });
+
+                            // emit friend request to user whom the request is related to
+                            sio.sockets.in(profileId).emit(&quot;friend-request&quot;, {
+                                _id      : socket.handshake.session.user._id,
+                                fullname : socket.handshake.session.user.first_name + &quot; &quot; + socket.handshake.session.user.last_name
+                            });
+                        }
+                    });
+                }
+            });
+        }
+
+        /**
+         Accepts a friend request from a given user.
+
+         @param data
+         @method acceptFriendRequest
+         **/
+        function acceptFriendRequest(data) {
+            model.UserModel.getUser(socket.handshake.session.user._id, function(user) {
+
+                // validation
+                // validate if there is already a pending friend request to that user
+                var hasPendingFriendRequest = utils.inArray(user.pendingFriendRequests, &quot;_id&quot;, data._id);
+
+                // validate if the users are already friends
+                var areAlreadyFriends = utils.inArray(user.friends, &quot;_id&quot;, data._id);
+
+                if (hasPendingFriendRequest &amp;&amp; !areAlreadyFriends) {
+
+                    model.UserModel.getUser(data._id, function(requestUser) {
+                        // remove pending friend request
+                        utils.removeFromArray(user.pendingFriendRequests, &quot;_id&quot;, requestUser._id);
+
+                        // befriend both user
+                        user.friends.push({
+                            _id : requestUser._id,
+                            name : requestUser.first_name + &quot; &quot; + requestUser.last_name
+                        });
+                        requestUser.friends.push({
+                            _id : user._id,
+                            name : user.first_name + &quot; &quot; + user.last_name
+                        });
+
+                        // update both user in database
+                        user.save(function(error) {
+                            if (error) {
+                                console.log(&quot;Error saving\n&quot; + error);
+                            }
+                            else {
+                                requestUser.save(function(error) {
+                                    if (error) {
+                                        console.log(&quot;Error saving\n&quot; + error);
+                                    }
+                                    else {
+                                        // emit to all viewing the two profile pagess
+                                        sio.sockets.in(&quot;viewing-profile:&quot; + user._id).emit(&quot;response-accept-friend-request&quot;, { _id : requestUser._id, fullname : requestUser.first_name + &quot; &quot; + requestUser.last_name });
+                                        sio.sockets.in(&quot;viewing-profile:&quot; + requestUser._id).emit(&quot;response-accept-friend-request&quot;, { _id : requestUser._id, fullname : requestUser.first_name + &quot; &quot; + requestUser.last_name });
+
+                                        // emit accept to requester
+                                        sio.sockets.in(requestUser._id).emit(&quot;friend-request-accepted&quot;, { type : &quot;friend-request-accepted&quot; });
+                                    }
+                                });
+                            }
+                        });
+                    });
+                }
+            });
+        }
+
+        /**
+         Declines a friend request from a given user.
+
+         @param data
+         @method declineFriendRequest
+         **/
+        function declineFriendRequest(data) {
+            model.UserModel.getUser(socket.handshake.session.user._id, function(user) {
+
+                // validation
+                // validate if there is already a pending friend request to that user
+                var hasPendingFriendRequest = utils.inArray(user.pendingFriendRequests, &quot;_id&quot;, data._id);
+
+                // validate if the users are already friends
+                var areAlreadyFriends = utils.inArray(user.friends, &quot;_id&quot;, data._id);
+
+                if (hasPendingFriendRequest &amp;&amp; !areAlreadyFriends) {
+
+                    model.UserModel.getUser(data._id, function(requestUser) {
+
+                        // remove pending friend request
+                        utils.removeFromArray(user.pendingFriendRequests, &quot;_id&quot;, requestUser._id);
+
+                        // update user in database
+                        user.save(function(error){
+                            if (error) {
+                                console.log(&quot;Error saving\n&quot; + error);
+                            }
+                            else {
+                                console.log(&quot;successfully saved&quot;);
+
+                                // emit decline to owner of the profile
+                                sio.sockets.in(user._id).emit(&quot;response-decline-friend-request&quot;, { _id : requestUser._id });
+
+                                // emit decline to requester
+                                sio.sockets.in(requestUser._id).emit(&quot;friend-request-declined&quot;, { type : &quot;friend-request-declined&quot; });
+                            }
+                        });
+                    });
+                }
+            });
+        }
+
+        /**
+         When a user emits a chat-message, extend the message object with userId and time.
+         After saving the extended message object in an array, emit the message object to all clients
+
+         @param data
+         @method sendChatMessage
+         **/
+        function sendChatMessage(data) {
+            // only proceed if message contains at least 1 character
+            if (data.body.length &gt; 0) {
+
+                // escape message
+                data.body = sanitizer.escape(data.body);
+
+                // extend data object
+                data.user = socket.handshake.session.user;
+                data.time = utils.timeNow();
+
+                // save messages
+                previousMessages.push(data);
+
+                // keep a maximum of 30 message in the previousMessage array
+                if (previousMessages.length &gt; 30) {
+                    previousMessages.splice(0, 1);
+                }
+
+                // emit message to all clients
+                sio.sockets.emit(&quot;chat-message&quot;, data);
+            }
+        }
+    });
+};
+    </pre>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/../api.js"></script>
+<script src="../assets/js/api-filter.js"></script>
+<script src="../assets/js/api-list.js"></script>
+<script src="../assets/js/api-search.js"></script>
+<script src="../assets/js/apidocs.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+/* General */
+body {
+    padding-top: 60px;
+    position: relative;
+}
+.borderd {
+    border: 1px solid #DDDDDD;
+    border-radius: 4px 0 4px 0;
+    padding: 20px;
+}
+li {
+    list-style: none;
+}
+ul {
+    margin: 0;
+}
+.error {
+    color: indianred;
+}
+
+/* Registration */
+form[name="registration"] .error-val {
+    border-color: #B94A48;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+}
+input[value="register"] {
+    display: block;
+    margin-top: 20px;
+}
+
+/* Profile */
+#new-corkboard-message {
+    resize: none;
+}
+.corkboard-message {
+    margin-bottom: 15px;
+}
+.corkboard-message-date {
+    color: lightgray;
+    float: right;
+}
+.corkboard-message-body {
+    margin-top: 5px;
+}
+
+#friend-request-send-controls .btn {
+    float: right;
+}
+#friend-request-send-controls div {
+    color: white;
+    padding: 10px;
+    text-align: center;
+    cursor: default;
+}
+#friend-request-send-controls .pending-friend-request {
+    background-color: #49AFCD;
+}
+#friend-request-send-controls .friend {
+    background-color: #5BB75B;
+}
+#friend-request-notification li a{
+    margin: 0px 5px;
+}
+.accept-friend-request, .decline-friend-request {
+    margin-left: 10px;
+}
+.friend-request-react-controls {
+    float: right;
+}
+.accept-friend-request {
+    color: lightgreen;
+}
+.decline-friend-request {
+    color: lightcoral;
+}
+
+/* Chat */
+.chat-message-time {
+    display: block;
+    float: left;
+    color: lightgray;
+}
+.chat-message-user {
+    display: block;
+    float: left;
+    margin-left: 5px;
+    width: 75px;
+}
+.chat-message-body {
+    display: block;
+    float: left;
+}
+.chat-message {
+    clear: both;
+}
